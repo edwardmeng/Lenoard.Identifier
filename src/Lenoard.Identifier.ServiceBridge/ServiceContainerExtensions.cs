@@ -11,6 +11,12 @@ namespace Lenoard.Identifier.ServiceBridge
             return container.UseIdentifier<DefaultIdentityGenerator>();
         }
 
+        public static IServiceContainer UseSortableIdentifier(this IServiceContainer container)
+        {
+            if (container == null) throw new ArgumentNullException(nameof(container));
+            return container.UseIdentifier<SortableIdentityGenerator>();
+        }
+
         public static IServiceContainer UseIdentifier(this IServiceContainer container, IIdentityGenerator generator)
         {
             if (container == null) throw new ArgumentNullException(nameof(container));

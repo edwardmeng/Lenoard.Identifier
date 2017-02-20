@@ -29,6 +29,9 @@
     <Compile Include="..\..\src\Lenoard.Identifier\FlakeIdentityGenerator.cs">
       <Link>FlakeIdentityGenerator.cs</Link>
     </Compile>
+    <Compile Include="..\..\src\Lenoard.Identifier\SortableIdentityGenerator.cs">
+      <Link>SortableIdentityGenerator.cs</Link>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>

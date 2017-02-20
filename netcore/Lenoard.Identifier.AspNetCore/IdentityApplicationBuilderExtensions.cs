@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Lenoard.Identifier.AspNetCore;
 
 namespace Microsoft.AspNetCore.Builder
 {
@@ -10,7 +6,7 @@ namespace Microsoft.AspNetCore.Builder
     {
         public static IApplicationBuilder UseCorrelation(this IApplicationBuilder app)
         {
-            
+            return app.UseMiddleware<CorrelationMiddleware>();
         }
     }
 }

@@ -11,6 +11,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Lenoard.Identifier.netcore"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Lenoard.Identifier.AspNetCore", "netcore\Lenoard.Identifier.AspNetCore\Lenoard.Identifier.AspNetCore.xproj", "{4F8CE5AE-3683-4E62-8D12-27A66A538AB6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{055CCCF6-D3DC-4768-9167-2618AF570B6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F394F03-597B-4B23-8419-652D924ABC72} = {055CCCF6-D3DC-4768-9167-2618AF570B6F}
+		{9C7CFB3E-73D1-436E-A33C-EEE184503804} = {055CCCF6-D3DC-4768-9167-2618AF570B6F}
+		{41F5BCE4-205A-4D1E-81E1-8563D50AB1FF} = {055CCCF6-D3DC-4768-9167-2618AF570B6F}
+		{4F8CE5AE-3683-4E62-8D12-27A66A538AB6} = {055CCCF6-D3DC-4768-9167-2618AF570B6F}
 	EndGlobalSection
 EndGlobal

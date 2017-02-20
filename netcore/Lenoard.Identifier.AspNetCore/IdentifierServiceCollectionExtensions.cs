@@ -11,6 +11,12 @@ namespace Microsoft.Extensions.DependencyInjection
             return services.AddIdentifier<DefaultIdentityGenerator>();
         }
 
+        public static IServiceCollection AddSortableIdentifier(this IServiceCollection services)
+        {
+            if (services == null) throw new ArgumentNullException(nameof(services));
+            return services.AddIdentifier<SortableIdentityGenerator>();
+        }
+
         public static IServiceCollection AddIdentifier(this IServiceCollection services, IIdentityGenerator generator)
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
